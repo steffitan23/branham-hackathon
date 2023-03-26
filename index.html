@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Uncrackable Login Page</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div class="msg">You can never hack me and attain valuable codes! </br>
+        <input type="text" placeholder="Uncrackable Password" id="passwordInput"></input>
+        <button type="submit" id="submitBtn">Submit</button></div>
+    <div id="terminal">
+    </div>
+    <p id="beep" style="visibility:hidden">Beep boop! Logged the flag into the Browser Console.</p>
+</body>
+<script src="password.js"></script>
+<script>
+    submitBtn.addEventListener("click", ()=>{
+    if (passwordInput.value == "G0dG4m3r4040") {
+        revealFlag()
+    } else {
+        initiateLockdown()
+    }
+})
+</script>
+</html>
+
